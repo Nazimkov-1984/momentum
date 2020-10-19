@@ -7,7 +7,8 @@ const time = document.querySelector('.time'),
   day = document.querySelector ('.day'),
   month = document.querySelector ('.month'),
   joke = document.querySelector ('.joke'),
-  btnJoke = document.querySelector ('.button__joke');
+  btnJoke = document.querySelector ('.button__joke'), 
+  inputCity = document.querySelector ('.input');
 // Options
 const showAmPm = false;
 
