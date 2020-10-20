@@ -11,7 +11,8 @@ const time = document.querySelector('.time'),
   inputCity = document.querySelector ('.input'),
   tempfolder = document.querySelector('.temp'), 
   btnWeather = document.querySelector ('.btn__weather'), 
-  current__city = document.querySelector ('.current__city');
+  current__city = document.querySelector ('.current__city'),
+  windSpeed = document.querySelector('.wind_speed');
 // Options
 const showAmPm = false;
 
@@ -317,7 +318,9 @@ async function getWeather(city_name) {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=0e3f4c3098c7d2107ce581907ae44eb7&units=metric`;
     const res = await fetch(url);
     const data = await res.json(); 
+    console.log (data);
     tempfolder.textContent = data.main.temp;
+    windSpeed.textContent = data.weather[0].description;
 
     btnWeather.addEventListener ('click', () =>{
        city_name = inputCity.value;
