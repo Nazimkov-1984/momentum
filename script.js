@@ -66,33 +66,33 @@ function setBgGreet() {
   }
 
   switch (hour) {
-case 0 :  document.body.style.backgroundImage = "url('/assets/images/night/01.jpg')"; break;
-case 1 :  document.body.style.backgroundImage = "url('/assets/images/night/02.jpg')";break;
-case 2 :  document.body.style.backgroundImage = "url('/assets/images/night/03.jpg')";break;
-case 3 :  document.body.style.backgroundImage = "url('/assets/images/night/04.jpg')";break;
-case 4 :  document.body.style.backgroundImage = "url('/assets/images/night/05.jpg')";break;
-case 5 :  document.body.style.backgroundImage = "url('/assets/images/night/06.jpg')";break;
+case 0 :  document.body.style.backgroundImage = "url('assets/images/night/01.jpg')"; break;
+case 1 :  document.body.style.backgroundImage = "url('assets/images/night/02.jpg')";break;
+case 2 :  document.body.style.backgroundImage = "url('assets/images/night/03.jpg')";break;
+case 3 :  document.body.style.backgroundImage = "url('assets/images/night/04.jpg')";break;
+case 4 :  document.body.style.backgroundImage = "url('assets/images/night/05.jpg')";break;
+case 5 :  document.body.style.backgroundImage = "url('assets/images/night/06.jpg')";break;
 
-case 6 :  document.body.style.backgroundImage = "url('/assets/images/morning/01.jpg')";break;
-case 7 :  document.body.style.backgroundImage = "url('/assets/images/morning/02.jpg')";break;
-case 8 :  document.body.style.backgroundImage = "url('/assets/images/morning/03.jpg')";break;
-case 9 :  document.body.style.backgroundImage = "url('/assets/images/morning/04.jpg')";break;
-case 10 :  document.body.style.backgroundImage = "url('/assets/images/morning/05.jpg')";break;
-case 11:  document.body.style.backgroundImage = "url('/assets/images/morning/06.jpg')";break;
-case 12 :  document.body.style.backgroundImage = "url('/assets/images/morning/07.jpg')";break;
+case 6 :  document.body.style.backgroundImage = "url('assets/images/morning/01.jpg')";break;
+case 7 :  document.body.style.backgroundImage = "url('assets/images/morning/02.jpg')";break;
+case 8 :  document.body.style.backgroundImage = "url('assets/images/morning/03.jpg')";break;
+case 9 :  document.body.style.backgroundImage = "url('assets/images/morning/04.jpg')";break;
+case 10 :  document.body.style.backgroundImage = "url('assets/images/morning/05.jpg')";break;
+case 11:  document.body.style.backgroundImage = "url('assets/images/morning/06.jpg')";break;
+case 12 :  document.body.style.backgroundImage = "url('assets/images/morning/07.jpg')";break;
 
-case 13 :  document.body.style.backgroundImage = "url('/assets/images/day/01.jpg')";break;
-case 14:  document.body.style.backgroundImage = "url('/assets/images/day/02.jpg')";break;
-case 15 :  document.body.style.backgroundImage = "url('/assets/images/day/03.jpg')";break;
-case 16 :  document.body.style.backgroundImage = "url('/assets/images/day/04.jpg')";break;
-case 17 :  document.body.style.backgroundImage = "url('/assets/images/day/05.jpg')";break;
-case 18:  document.body.style.backgroundImage = "url('/assets/images/day/06.jpg')";break;
-case 19 :  document.body.style.backgroundImage = "url('/assets/images/day/07.jpg')";break;
+case 13 :  document.body.style.backgroundImage = "url('assets/images/day/01.jpg')";break;
+case 14:  document.body.style.backgroundImage = "url('assets/images/day/02.jpg')";break;
+case 15 :  document.body.style.backgroundImage = "url('assets/images/day/03.jpg')";break;
+case 16 :  document.body.style.backgroundImage = "url('assets/images/day/04.jpg')";break;
+case 17 :  document.body.style.backgroundImage = "url('assets/images/day/05.jpg')";break;
+case 18:  document.body.style.backgroundImage = "url('assets/images/day/06.jpg')";break;
+case 19 :  document.body.style.backgroundImage = "url('assets/images/day/07.jpg')";break;
 
-case 20 :  document.body.style.backgroundImage = "url('../assets/images/evening/01.jpg')";break;
-case 21:  document.body.style.backgroundImage = "url('../assets/images/evening/02.jpg')";break;
-case 22 :  document.body.style.backgroundImage = "url('../assets/images/evening/03.jpg')";break;
-case 23 :  document.body.style.backgroundImage = "url('../assets/images/evening/04.jpg')";break;
+case 20 :  document.body.style.backgroundImage = "url('assets/images/evening/01.jpg')";break;
+case 21:  document.body.style.backgroundImage = "url('assets/images/evening/02.jpg')";break;
+case 22 :  document.body.style.backgroundImage = "url('assets/images/evening/03.jpg')";break;
+case 23 :  document.body.style.backgroundImage = "url('assets/images/evening/04.jpg')";break;
 
 
   }
