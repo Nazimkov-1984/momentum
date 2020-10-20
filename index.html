@@ -9,8 +9,14 @@
   <title>Momentum</title>
 </head>
 <body>
-<input type="text" class="input" placeholder="Enter city">
-<img src="./assets/images/button.png" alt="button" class="button">
+  <div class="weather-wrapper">
+    <p class="current__city">Kyiv</p> <span class="temp">35</span> <span>&#8451;</span> 
+    <div class="weather__date__wrapper">
+      <input type="text" class="input" placeholder="Enter city"><img class="btn__weather" src="./assets/images/button.png" alt="">
+    </div>
+  </div>
+
+<img src="./assets/images/button.png" alt="button" class="button" title="Press to change background image">
   <time class="time"></time>
   <div class="wrapper-month">
     <span class="dayOfWeek"></span>
@@ -22,7 +28,7 @@
     <span class="greeting"></span>
     <span class="name" contenteditable="true" tabindex="1"></span>
   </h1>
-  <h2>What Is Your Focus For Today?</h2>
+  <h2 class="focus__title">What Is Your Focus For Today?</h2>
   <h2 class="focus" contenteditable="true" tabindex="1"></h2>
   <div class="joke-wrapper">
     <div class="text-wrapper">

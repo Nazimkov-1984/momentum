@@ -20,9 +20,24 @@ body {
 
 .time {
   font-size: 8rem;
-  
+  width: 600px;
+}
+@media (max-width: 768px){
+  .time {
+    width: 100%;
+  } 
 }
 
+@media (max-width: 768px) {
+  .time {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 768px){
+  .time {
+    font-size: 3rem;
+  }
+}
 h1 {
   margin-bottom: 3rem;
 }
@@ -32,27 +47,36 @@ h2 {
   opacity: 0.8;
 }
 
-@media (max-width: 700px) {
-  .time {
-    font-size: 6rem;
-  }
-}
-
 .dayOfWeek {
   display: inline;
   font-size: 3rem;
   color: antiquewhite;
   margin-right: 10px;
 }
+@media (max-width: 768px) {
+  .dayOfWeek {
+    font-size: 1.5rem;
+  }
+}
 .day {
   font-size: 3rem;
   color: antiquewhite;
   margin-right: 10px;
 }
+@media (max-width: 768px) {
+  .day {
+    font-size: 1.5rem;
+  }
+}
 .month {
   display: inline;
   font-size: 3rem;
   color: antiquewhite;
+}
+@media (max-width: 768px) {
+  .month {
+    font-size: 1.5rem;
+  }
 }
 .wrapper-month {
   display: flex;
@@ -66,6 +90,12 @@ h2 {
   height: auto;
   transition: all .8s;
 }
+@media (max-width: 768px) {
+  .button {
+    width: 40px;
+    height: auto;
+  }
+}
 .button:hover {
   transform: rotate(90deg);
   opacity: .6;
@@ -73,6 +103,23 @@ h2 {
   border: 2px solid white;
   border-radius: 50%;
 }
+@media (max-width: 768px) {
+  .greeting {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .name {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .focus__title{
+    font-size: 1rem;
+  }
+}
+
+
 .joke-wrapper{
 display: flex;
 justify-content: space-between;
@@ -108,16 +155,50 @@ width: 60%;
   border: 2px solid ;
   border-radius: 50%;
 }
+.weather-wrapper {
+  align-self: flex-start;
+}
+@media (max-width: 768px) {
+  .weather-wrapper {
+    align-self: center;
+  }
+}
 .input {
   background-color: rgba(201, 197, 235, .3);
   border: none;
   height: 30px;
   border-radius: 15px;
-  color: aliceblue;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
+  outline: none;
+  border: none;
 }
 ::-webkit-input-placeholder {color:wheat;}
 ::-moz-placeholder          {color:wheat;}/* Firefox 19+ */
 :-moz-placeholder           {color:wheat;}/* Firefox 18- */
 :-ms-input-placeholder      {color:wheat;}
+
+.current__city {
+ font-size: 2rem;
+ margin-bottom: 5px;
+}
+.btn__weather {
+  width: 35px;
+  height: auto;
+  transition: all .8s;
+  background-color: rgba(201, 197, 235, .3);
+  border-radius: 50%;
+
+}
+.btn__weather:hover {
+  transform: rotate(90deg);
+  opacity: .6;
+  cursor: pointer;
+  border: 2px solid ;
+  border-radius: 50%;
+}
+.weather__date__wrapper {
+  display: flex;
+  align-items: center;
+
+}

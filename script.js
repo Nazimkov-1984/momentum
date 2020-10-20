@@ -8,7 +8,10 @@ const time = document.querySelector('.time'),
   month = document.querySelector ('.month'),
   joke = document.querySelector ('.joke'),
   btnJoke = document.querySelector ('.button__joke'), 
-  inputCity = document.querySelector ('.input');
+  inputCity = document.querySelector ('.input'),
+  tempfolder = document.querySelector('.temp'), 
+  btnWeather = document.querySelector ('.btn__weather'), 
+  current__city = document.querySelector ('.current__city');
 // Options
 const showAmPm = false;
 
@@ -46,9 +49,11 @@ function setBgGreet() {
   if (hour < 12 && hour > 6) {
     // Morning
     greeting.textContent = 'Good Morning, ';
+    document.body.style.color = 'white';
   } else if (hour < 18 && hour >12) {
     // Afternoon
     greeting.textContent = 'Good Afternoon, ';
+    document.body.style.color = 'white';
   } else  if (hour < 24 && hour > 18) { 
     // Evening
     greeting.textContent = 'Good Evening, ';
@@ -299,14 +304,32 @@ btnJoke.addEventListener ('click', () => {
   get_joke_of_the_day();
 });
 
-async function getWeather() {  
-  const API_key = '0e3f4c3098c7d2107ce581907ae44eb7';
-  let city_name = 'Kyiv';
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=0e3f4c3098c7d2107ce581907ae44eb7&units=metric`;
-  const res = await fetch(url);
-  const data = await res.json(); 
-  console.log(data);
+async function getWeather(city_name) { 
+ 
+  if (localStorage.getItem('city')=== null || localStorage.getItem('city') === ''){
+    city_name = localStorage.setItem('city', 'Kyiv');
+  } else {
+    city_name = localStorage.getItem('city');
+    current__city.textContent = city_name;
+
+  }
+    const API_key = '0e3f4c3098c7d2107ce581907ae44eb7';
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=0e3f4c3098c7d2107ce581907ae44eb7&units=metric`;
+    const res = await fetch(url);
+    const data = await res.json(); 
+    tempfolder.textContent = data.main.temp;
+
+    btnWeather.addEventListener ('click', () =>{
+       city_name = inputCity.value;
+       current__city.textContent = city_name;
+       localStorage.setItem('city', city_name);
+      getWeather(city_name);
+      inputCity.value = '';
+    });
+    
 }
+
+
 
 
 // Run
